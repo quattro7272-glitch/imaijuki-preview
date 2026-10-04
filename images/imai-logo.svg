@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" width="560" height="200" role="img" aria-label="IMAI">
+  <title>IMAI</title>
+  <g fill="none" stroke="#1b2550" stroke-width="17" stroke-linecap="butt" stroke-linejoin="round">
+    <!-- I -->
+    <path d="M8.5 0V100"/>
+    <!-- m：角の丸い2連アーチ -->
+    <path d="M48.5 100V28.5A23.25 20 0 0 1 95 28.5V100M95 28.5A23.25 20 0 0 1 141.5 28.5V100"/>
+    <!-- A：左はカーブ、右は縦棒、中に横棒 -->
+    <path d="M176.5 100C176.5 48 200 8.5 235 8.5H240M245.5 0V100M180 62H245.5"/>
+    <!-- I -->
+    <path d="M271.5 0V100"/>
+  </g>
+</svg>

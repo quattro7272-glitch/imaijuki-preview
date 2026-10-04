@@ -337,3 +337,40 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover { background: var(--ap-text);
 
 /* 見出し内の補足（日付など）は小さく */
 #main h2 .ap-note { margin-left: .6em; font-size: .55em; font-weight: 500; color: var(--ap-sub); letter-spacing: 0; }
+
+/* ヘッダー：IMAIマーク＋会社名を横並びに */
+header #logo { width: auto; }
+header #logo a { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+header #logo img.ap-mark { height: 20px; width: auto; filter: none; opacity: 1; }
+header #logo img.ap-name { width: 190px; }
+@media screen and (max-width: 900px) {
+	header #logo { width: auto; }
+	header #logo img.ap-mark { height: 17px; }
+	header #logo img.ap-name { width: 150px; }
+}
+@media screen and (max-width: 480px) {
+	header #logo a { gap: 9px; }
+	header #logo img.ap-mark { height: 15px; }
+	header #logo img.ap-name { width: 136px; }
+}
+
+/* ロゴが横長になったので、メニューは中央ではなく電話番号の手前に右寄せ */
+@media screen and (min-width: 901px) {
+	#menubar > ul.inner { margin: 0 calc(max(0px, (100% - 1180px) / 2) + 22px + 215px) 0 auto; }
+}
+@media screen and (min-width: 901px) and (max-width: 1180px) {
+	#tel { display: none; }
+	#menubar > ul.inner { margin-right: 14px; }
+	#menubar li a, #menubar li:first-child a { padding: 0 8px; font-size: 12px; }
+}
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+	header #logo img.ap-name { width: 150px; }
+	header #logo img.ap-mark { height: 16px; }
+	#menubar li a, #menubar li:first-child a { padding: 0 6px; font-size: 11.5px; }
+}
+
+/* スマホ：元HTMLの画像に直接書かれた左右の余白ではみ出さないように */
+@media screen and (max-width: 900px) {
+	#main img, #main [style*="margin-left"], #main [style*="margin: "], #main [style*="margin:"] { margin-left: 0 !important; margin-right: 0 !important; }
+	#main div[style*="float"] { float: none !important; }
+}
