@@ -331,3 +331,9 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover { background: var(--ap-text);
 #main a:hover { text-decoration: underline; }
 #sub .box1 { background: var(--ap-gray); }
 #sub a[href^="tel:"] { text-decoration: none; }
+
+/* トップのヒーロー：会社名を外してキャッチコピーを主役に */
+.ap-hero h2 { font-size: clamp(30px, 4.4vw, 54px); line-height: 1.3; }
+@media screen and (max-width: 900px) {
+	.ap-hero h2 br { display: none; }
+}
