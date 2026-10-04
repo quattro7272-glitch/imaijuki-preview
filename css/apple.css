@@ -334,3 +334,10 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover { background: var(--ap-text);
 
 /* トップのヒーロー：会社名を外してキャッチコピーを主役に */
 .ap-hero h2 { font-size: clamp(18px, 2.2vw, 26px); font-weight: 500; line-height: 1.6; letter-spacing: .02em; }
+
+/* ===== 小見出し：細い線＋旧コーポレートカラーの青のアクセント ===== */
+#main h2, .ap-head { position: relative; padding-bottom: 16px; border-bottom: 1px solid var(--ap-line); }
+#main h2::after, .ap-head::after { content: ""; position: absolute; left: 0; bottom: -1px; width: 56px; height: 3px; background: #0722ad; border-radius: 2px; }
+.ap-head { max-width: 1136px; padding-left: 0; padding-right: 0; margin-left: auto; margin-right: auto; }
+@media screen and (max-width: 1180px) { .ap-head { margin-left: 22px; margin-right: 22px; } }
+@media screen and (max-width: 900px) { .ap-head { margin-left: 16px; margin-right: 16px; } }

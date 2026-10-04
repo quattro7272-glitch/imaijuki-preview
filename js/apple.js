@@ -12,3 +12,4 @@ document.addEventListener("DOMContentLoaded", function () {
 	}, { rootMargin: "0px 0px -8% 0px" });
 	els.forEach(function (el) { io.observe(el); });
 });
+
